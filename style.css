@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #112A46;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cabeçalho Retrô com Borda Dupla e Efeito de Luz */
+header { 
+    background-color: #ACC8E5;
+    color: #112A46;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 24px auto; 
+    padding: 35px 20px;
+    border: 5px solid #112A46;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(17, 42, 70, 0.15);
+}
+
+.spotlight {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.45) 0%, transparent 70%);
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0 0 8px 0;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 0px rgba(17, 42, 70, 0.2);
+}
+
+header p {
+    font-size: 1.15rem;
+    margin: 0 0 22px 0;
+    font-weight: 600;
+}
+
+/* Botão de Tema Personalizado */
+.btn-theme {
+    background-color: #112A46;
+    color: #ACC8E5;
+    border: 2px solid #112A46;
+    padding: 10px 22px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-theme:hover {
+    background-color: transparent;
+    color: #112A46;
+    transform: translateY(-2px);
+}
+
+/* Bloco Principal */
+main { 
+    background-color: #112A46;
+    color: #ACC8E5;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+} 
+
+/* Moldura e Ajuste da Imagem Principal */
+img { 
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #ACC8E5;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+/* Grelha de Cards Elegante */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    border-top: 2px dashed #ACC8E5;
+    padding-top: 28px;
+}
+
+.card-item {
+    border: 1px solid rgba(172, 200, 229, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.04);
+    text-align: left;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-4px);
+    border-color: #ACC8E5;
+}
+
+.card-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.card-item h3 {
+    font-size: 1.4rem;
+    margin: 0 0 10px 0;
+    color: #ACC8E5;
+}
+
+.card-item p {
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.card-author {
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.85;
+}
+
+footer {
+    text-align: center;
+    max-width: 800px;
+    margin: 28px auto 0 auto;
+    padding: 16px;
+    color: #112A46;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Estilos do Modo Noturno */
+body.dark-mode {
+    background-color: #0b141f;
+    color: #ACC8E5;
+}
+
+body.dark-mode header {
+    background-color: #112A46;
+    color: #ACC8E5;
+    border-color: #ACC8E5;
+}
+
+body.dark-mode .btn-theme {
+    background-color: #ACC8E5;
+    color: #112A46;
+    border-color: #ACC8E5;
+}
+
+body.dark-mode .btn-theme:hover {
+    background-color: transparent;
+    color: #ACC8E5;
+}
+
+body.dark-mode footer {
+    color: #ACC8E5;
+}

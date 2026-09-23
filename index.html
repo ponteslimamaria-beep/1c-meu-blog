@@ -1,7 +1,72 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-br">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineBlog - QuartaParede</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+=======
 
 const themeToggleBtn = document.getElementById('theme-toggle');
 const savedTheme = localStorage.getItem('theme');
+>>>>>>> f5f169182b6e3b95dafe1f287890aef0aa16be3e
 
+<<<<<<< HEAD
+    <header>
+        <div class="spotlight">
+            <h1>QuartaParede</h1>
+            <p>Quebrando a barreira entre voce e o mundo do cinema</p>
+            <button class="btn-theme" id="theme-toggle">Modo Noturno</button>
+        </div>
+    </header>
+
+    <main>
+        <article class="post-principal">
+            <img src="913667843159941658.jpeg" alt="Cartão de encerramento de filme clássico em preto e branco. No centro, um círculo de luz destaca a frase 'The End' em letras cursivas e sombreadas. Abaixo do texto principal, lê-se em letras menores 'Part Two - Old Movies Collection by Pixelbuddha'. A imagem possui efeitos visuais vintage de ruído, grão e arranhões de película.">
+            <p>O seu novo portal de cinema finalmente está no ar. Este é o nosso 
+            primeiro post e estamos muito felizes em receber você por aqui.
+            Criamos este espaço para os apaixonados por sétima arte. 
+            Se você não perde um lançamento, ama debater teorias ou vive caçando clássicos
+            escondidos, este é o seu lugar.</p>
+        </article>
+
+        <section class="posts-grid">
+            <div class="card-item">
+                <span class="card-tag">Curiosidades</span>
+                <h3>Cinema em Preto e Branco</h3>
+                <p>Como os diretores usavam o jogo de luzes e sombras no cinema classico.</p>
+                <span class="card-author">Por Marcelo Silva</span>
+            </div>
+            <div class="card-item">
+                <span class="card-tag">Analise</span>
+                <h3>A Magia dos Cartazes</h3>
+                <p>A arte da tipografia nos cartoes de encerramento dos filmes antigos.</p>
+                <span class="card-author">Por Ana Costa</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 QuartaParede - Projeto de Educacao Digital.</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('theme-toggle');
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if(document.body.classList.contains('dark-mode')) {
+                btn.textContent = 'Modo Diurno';
+            } else {
+                btn.textContent = 'Modo Noturno';
+            }
+        });
+    </script>
+</body>
+</html>
+=======
 if (savedTheme === 'light') {
   document.body.classList.add('light-mode');
   themeToggleBtn.textContent = '🌘 Modo Escuro';
@@ -18,3 +83,4 @@ themeToggleBtn.addEventListener('click', () => {
     localStorage.setItem('theme', 'dark');
   }
 });
+>>>>>>> f5f169182b6e3b95dafe1f287890aef0aa16be3e
