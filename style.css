@@ -6,11 +6,28 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f4f7fa;
+    /* Fundo com degradê escuro no estilo espaço */
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    background-attachment: fixed;
     margin: 0;
     padding: 20px;
-    color: #112A46;
+    color: #ACC8E5;
     transition: background-color 0.3s ease, color 0.3s ease;
+    
+    /* Desenha as estrelinhas usando gradientes em várias posições */
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 40px 70px, #ffddf4, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 160px 120px, #d2e1ff, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 230px 190px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 310px 80px, #ffd1ea, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 370px 150px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 450px 50px, #bde0fe, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 520px 220px, #ffffff, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 600px 300px;
+    animation: twinkles 4s infinite alternate ease-in-out;
 }
 
 /* Cabeçalho Retrô com Borda Dupla e Efeito de Luz */
