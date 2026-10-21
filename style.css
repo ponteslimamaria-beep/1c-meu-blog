@@ -298,25 +298,3 @@ body.dark-mode .btn-theme:hover {
 body.dark-mode footer {
     color: #ACC8E5;
 }
-/* Botão da Playlist */
-.btn-playlist {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 24px;
-    background-color: #ACC8E5;
-    color: #112A46;
-    font-weight: bold;
-    font-size: 0.9rem;
-    text-decoration: none;
-    border-radius: 25px;
-    border: 2px solid #112A46;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.btn-playlist:hover {
-    background-color: #ffffff;
-    color: #112A46;
-    transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 6px 16px rgba(172, 200, 229, 0.4);
-}
